@@ -18,3 +18,18 @@
     align-items: center;
     font-size: 1.5rem;
 }
+
+@keyframes slide-in {
+    from {
+      offset-distance: 0%;
+    }
+    to {
+      offset-distance: 100%;
+    }
+  }
+  
+  .overlay {
+    offset-path: path('M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80');
+    animation: slide-in 2s linear infinite;
+  }
+  
